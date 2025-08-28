@@ -4,7 +4,7 @@
 	branch = master
 [submodule "dependency/llama.cpp"]
 	path = dependency/llama.cpp
-	url = https://github.com/NexaAI/llama.cpp.git
+	url = https://github.com/yownas/llama.cpp-nexa.git
 	branch = release
 [submodule "nexa/eval/benchmark_tasks"]
 	path = nexa/eval/benchmark_tasks

@@ -186,7 +186,7 @@ if(LLAMA_BUILD)
     endif()
 
     ExternalProject_Add(llama_project
-        SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/dependency/llama.cpp-nexa
+        SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/dependency/llama.cpp
         BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/llama_build
         CMAKE_ARGS ${LLAMA_CMAKE_ARGS}
         BUILD_ALWAYS 1
