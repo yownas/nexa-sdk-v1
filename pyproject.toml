@@ -99,8 +99,8 @@ siglip = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/NexaAI/nexa-sdk"
-Issues = "https://github.com/NexaAI/nexa-sdk/issues"
+Homepage = "https://github.com/yownas/nexa-sdk-v1"
+Issues = "https://github.com/yownas/nexa-sdk-v1/issues"
 Documentation = "https://docs.nexa4ai.com/"
 
 [project.scripts]

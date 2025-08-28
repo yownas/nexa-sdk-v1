@@ -6,7 +6,7 @@ git clone --recursive https://github.com/NexaAI/nexa-sdk-ggml
 
 Step 2: Add submodule in a specific branch, for example `nexa-audio-lm`
 ```shell
-git submodule add -b nexa-audio-lm https://github.com/NexaAI/llama.cpp dependency/nexa_llama.cpp
+git submodule add -b nexa-audio-lm https://github.com/yownas/llama.cpp-nexa dependency/nexa_llama.cpp
 ```
 
 Step 3: Initialize and update the submodules
