@@ -12,7 +12,7 @@ jobs:
     runs-on: macos-${{ matrix.os }}
     strategy:
       matrix:
-        os: [12, 13, 14]
+        os: [14, 15]
 
     steps:
       - uses: actions/checkout@v4
@@ -22,7 +22,7 @@ jobs:
       # Used to host cibuildwheel
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.8"
+          python-version: "3.10"
           cache: "pip"
 
       - name: Install dependencies
@@ -37,7 +37,7 @@ jobs:
           CIBW_REPAIR_WHEEL_COMMAND: ""
           CIBW_BUILD_FRONTEND: "build"
           CIBW_ENVIRONMENT: CMAKE_ARGS="-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64"
-          CIBW_BUILD: "cp37-* cp38-* cp39-* cp310-* cp311-* cp312-* cp313-*"
+          CIBW_BUILD: "cp310-* cp311-* cp312-* cp313-*"
           MACOSX_DEPLOYMENT_TARGET: ${{ matrix.os }}
           CMAKE_BUILD_PARALLEL_LEVEL: 4
         with:
